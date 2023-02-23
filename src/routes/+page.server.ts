@@ -7,6 +7,9 @@ export const config: Config = {
         expiration: 15
     }
 }
+
+export const prerender = 'auto';
+
 export const load: PageServerLoad = () => {
 
     let id = nanoid();
