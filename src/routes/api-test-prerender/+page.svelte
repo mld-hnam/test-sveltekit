@@ -2,7 +2,7 @@
     let id = 'not set'
 
     async function fetchFromAPI() {
-        const res = await fetch("/api")
+        const res = await fetch("/api-prerender")
         const data = await res.json()
         id = data.id
     }

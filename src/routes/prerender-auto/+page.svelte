@@ -8,6 +8,6 @@
   ID: {data.id}
 </p>
 <p>
-  This correctly changes every 15 seconds
+  This doesn't change at all
 </p>
 <button on:click={() => window.location.reload()}>Refresh</button>
