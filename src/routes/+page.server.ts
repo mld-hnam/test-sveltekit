@@ -8,7 +8,7 @@ export const config: Config = {
     }
 }
 
-export const prerender = 'auto';
+export const prerender = true;
 
 export const load: PageServerLoad = () => {
 
