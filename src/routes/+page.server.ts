@@ -1,5 +1,6 @@
 import type { PageServerLoad } from './$types';
 import type {Config} from "@sveltejs/adapter-vercel";
+import { nanoid } from "nanoid";
 
 export const config: Config = {
     isr: {
@@ -7,7 +8,10 @@ export const config: Config = {
     }
 }
 export const load: PageServerLoad = () => {
+
+    let id = nanoid();
+
     return {
-        time: new Date()
+        id
     }
 }
