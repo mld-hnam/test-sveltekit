@@ -4,11 +4,11 @@ import { nanoid } from "nanoid";
 
 export const config: Config = {
     isr: {
-        expiration: 15
+        expiration: 5
     }
 }
 
-export const prerender = true;
+export const prerender = 'auto';
 
 export const load: PageServerLoad = () => {
 
