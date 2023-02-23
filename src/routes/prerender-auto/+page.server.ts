@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 
 export const config: Config = {
     isr: {
-        expiration: 5
+        expiration: 15
     }
 }
 

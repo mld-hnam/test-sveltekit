@@ -14,5 +14,5 @@
 </p>
 <button on:click={fetchFromAPI}>Fetch from API</button>
 <p>
-  This should change every 5 seconds, but it always changes
+  This should change every 15 seconds, but it always changes
 </p>
