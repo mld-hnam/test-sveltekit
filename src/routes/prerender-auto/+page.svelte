@@ -1,13 +1,15 @@
-<script lang="ts">
-    import type { PageData } from './$types';
-    export let data: PageData;
+<script>
+  export let data;
+  $: user = data?.name.first + " " + data?.name.last;
 </script>
 
-<h1>prerender = 'auto'</h1>
-<p>
-  ID: {data.id}
-</p>
-<p>
-  This should change every 15 seconds, but it always changes
-</p>
-<button on:click={() => window.location.reload()}>Refresh</button>
+<svelte:head>
+  <title>Home</title>
+  <meta name="description" content="Svelte demo app" />
+</svelte:head>
+
+{#if user}
+  <h1>Name: {user}</h1>
+{:else}
+  <h1>error getting user</h1>
+{/if}
